@@ -18,10 +18,9 @@ RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
 
 RUN rm -r /var/lib/apt/lists/*
 #RUN npm install --save-dev puppeteer 
-RUN npm install --save-dev jest
+#RUN npm install --save-dev jest
 
 COPY . /src
 
 WORKDIR src
 
-ENTRYPOINT ["/src/entrypoint.sh"]
